@@ -11,6 +11,7 @@ const locationSchema = new Schema({
   name: String,
   photo: String,
   author: {type: Schema.Types.ObjectId, ref: "Profile"},
+  content: String,
   comments: [commentSchema]
 }, {
   timestamps: true
