@@ -3,17 +3,17 @@
 <%- include('../partials/nav') %>
 
 
-<h1>Hello</h1>
 <main>
-  <h1>hello, <%= user ? user.profile.name : "friend" %></h1>
-  <% if (user?.profile.avatar) { %>
-    <div>
-      <img
-        src="<%= user.profile.avatar %>"
-        alt="<%= user.profile.name %> avatar"
-      />
-    </div>
-  <% } %>
+  <h1><%= title %></h1>
+  <form action="/locations" method="POST">
+    <label for="location-input">Location:</label>
+    <input type="text" name="name">
+    <label for="photo-input">Photo:</label>
+    <input type="text" name="photo">
+    <label for="content-input">Tell us about your time there:</label>
+    <textarea name="content" cols="30" rows="10"></textarea>
+    <button type="submit">Add Location</button> 
+  </form>
 </main>
 
 <%- include('../partials/footer') %>

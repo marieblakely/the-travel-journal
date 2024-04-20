@@ -6,7 +6,7 @@ const router = Router()
 
 
 //GET localhost:3000/locations/new
-router.get('/new', locationsCtrl.new)
+router.get('/new', isLoggedIn, locationsCtrl.new)
 
 
 export {
