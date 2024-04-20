@@ -1,6 +1,11 @@
 import { Location } from "../models/location.js";
 
 
+function newLocation (req, res){
+  res.render('locations/new', {
+    title: 'Add Location'
+  })
+}
 
 
 
@@ -11,5 +16,5 @@ import { Location } from "../models/location.js";
 
 
 export {
-  
+  newLocation as new,
 }
