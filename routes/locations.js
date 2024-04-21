@@ -13,6 +13,8 @@ router.get('/:locationId', isLoggedIn, locationsCtrl.show)
 
 router.post('/', isLoggedIn, locationsCtrl.create)
 
+router.post('/:locationId/comments', isLoggedIn, locationsCtrl.addComment)
+
 router.delete('/:locationId', isLoggedIn, locationsCtrl.delete)
 
 

@@ -64,7 +64,25 @@ function deleteLocation(req, res) {
   })
 }
 
-
+function addComment(req, res) {
+  Location.findById(req.params.locationId)
+  .then(location => {
+    req.body.author = req.user.profile._id
+    location.comments.push(req.body)
+    location.save()
+    .then(()=> {
+      res.redirect(`/locations/${location._id}`)
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect('/')
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/')
+  })
+}
 
 
 export {
@@ -73,4 +91,5 @@ export {
   create,
   show,
   deleteLocation as delete,
+  addComment,
 }
