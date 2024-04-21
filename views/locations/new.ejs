@@ -6,14 +6,18 @@
 <main>
   <h1><%= title %></h1>
   <form action="/locations" method="POST">
+    <img id="avatar" src="<%= user.profile.avatar %>"/><br><br>
     <label for="location-input">Location:</label>
-    <input type="text" name="name"><br>
+    <input type="text" name="name"><br><br>
     <label for="photo-input">Photo:</label>
-    <input type="text" name="photo"><br>
-    <label for="content-input">Tell us about your time there:</label>
-    <textarea name="content" cols="30" rows="10"></textarea><br>
+    <input type="text" name="photo" placeholder="Paste image url here"><br><br>
+    <div class="content-input">
+      <label for="content-input">Tell us about your time there:</label>
+      <textarea name="content" cols="30" rows="10"></textarea><br><br>
+    </div>
     <button type="submit">Add Location</button> 
   </form>
 </main>
 
 <%- include('../partials/footer') %>
+

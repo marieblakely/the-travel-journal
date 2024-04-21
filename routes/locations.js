@@ -9,9 +9,11 @@ router.get('/', isLoggedIn, locationsCtrl.index)
 //GET localhost:3000/locations/new
 router.get('/new', isLoggedIn, locationsCtrl.new)
 
+router.get('/:locationId', isLoggedIn, locationsCtrl.show)
+
 router.post('/', isLoggedIn, locationsCtrl.create)
 
-router.get('/:locationId', isLoggedIn, locationsCtrl.show)
+router.delete('/:locationId', isLoggedIn, locationsCtrl.delete)
 
 
 

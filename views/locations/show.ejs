@@ -12,6 +12,15 @@
     <h2> <%= location.name %></h2>
     <img src="<%= location.photo %>" alt="location image">
     <p> <%= location.content %></p>
+
+    <div class="button-container">
+      <% if (location.author._id.equals(user.profile._id)) { %>
+        <form action="/locations/<%= post._id %>?_method=DELETE" method="POST">
+          <button class="delete-button">Delete 🗑️</button>
+        </form>
+      <% } %>
+    </div>
+
   </div>
 </div>
 

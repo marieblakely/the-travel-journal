@@ -23,6 +23,7 @@ function newLocation (req, res){
 
 
 function create(req, res){
+  req.body.author = req.user.profile._id
   Location.create(req.body)
   .then(location => {
     res.redirect('/locations')
@@ -49,6 +50,20 @@ function show(req, res) {
   })
 }
 
+function deleteLocation(req, res) {
+  for (let key in req.body){
+    if (req.body[key] === '') delete req.body[key]
+  }
+  Location.findByIdAndDelete(req.params.locationId)
+  .then(location => {
+    res.redirect('/locations')
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/')
+  })
+}
+
 
 
 
@@ -57,4 +72,5 @@ export {
   newLocation as new,
   create,
   show,
+  deleteLocation as delete,
 }

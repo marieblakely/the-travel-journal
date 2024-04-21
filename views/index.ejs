@@ -2,7 +2,9 @@
 <%- include('./partials/nav') %>
 
 <main>
-  <h1>hello, <%= user ? user.profile.name : "friend" %></h1>
+  <h1>The Travel Journal</h1>
+  <h2>"Traveling - it leaves you speechless,  then turns you into a storyteller."  -Ibn Battuta</h2>
+  <h1>Hi <%= user ? user.profile.name : "Friend!" %></h1>
   <% if (user?.profile.avatar) { %>
     <div>
       <img
@@ -12,7 +14,7 @@
     </div>
   <% } %>
   <% if (!user) { %>
-    <h2>Please log in with the google button in the nav!</h2>
+    <h2>Login to add your adventure!</h2>
   <% } %>
 </main>
 
