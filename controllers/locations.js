@@ -50,19 +50,19 @@ function show(req, res) {
   })
 }
 
-function deleteLocation(req, res) {
-  for (let key in req.body){
-    if (req.body[key] === '') delete req.body[key]
-  }
-  Location.findByIdAndDelete(req.params.locationId)
-  .then(location => {
-    res.redirect('/locations')
-  })
-  .catch(err => {
-    console.log(err)
-    res.redirect('/')
-  })
-}
+// function deleteLocation(req, res) {
+//   for (let key in req.body){
+//     if (req.body[key] === '') delete req.body[key]
+//   }
+//   Location.findByIdAndDelete(req.params.locationId)
+//   .then(location => {
+//     res.redirect('/locations')
+//   })
+//   .catch(err => {
+//     console.log(err)
+//     res.redirect('/')
+//   })
+// }
 
 function addComment(req, res) {
   Location.findById(req.params.locationId)
@@ -84,12 +84,35 @@ function addComment(req, res) {
   })
 }
 
+// function deleteComment(req, res) {
+//   Location.findById(req.params.locationId)
+//   .then(location => {
+//     location.comments.remove({_id: req.params.commentId})
+//     location.save()
+//     .then(() => {
+//       res.redirect(`/locations/${location._id}`)
+//     })
+//     .catch(err => {
+//       console.log(err)
+//       res.redirect('/')
+//     })
+//   })
+//   .catch(err => {
+//     console.log(err)
+//     res.redirect('/')
+//   })
+// }
+
+
+
+
 
 export {
   index,
   newLocation as new,
   create,
   show,
-  deleteLocation as delete,
+  // deleteLocation as delete,
   addComment,
+  // deleteComment as delete,
 }

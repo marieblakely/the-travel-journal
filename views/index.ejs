@@ -1,4 +1,7 @@
 <%- include('./partials/html-head') %>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
 <%- include('./partials/nav') %>
 
 <main>
@@ -12,9 +15,6 @@
         alt="<%= user.profile.name %> avatar"
       />
     </div>
-  <% } %>
-  <% if (!user) { %>
-    <h2>Login to add your adventure!</h2>
   <% } %>
 </main>
 

@@ -21,7 +21,24 @@
   </form>
 </div>
 
-
+<% if (location.comments.length) { %>
+  <h3>Comments</h3>
+  <ul>
+    <% location.comments.forEach(comment => { %>
+      <li>
+        <%= comment.content %> - 
+        <%= comment.author.name %> 
+        <% if (comment.author._id.equals(user.profile._id)) { %>
+          <form action="/locations/<%= location._id %>/locations/<%= comment._id %>?_method=DELETE" method="POST">
+            <button type="submit">🗑️</button>
+          </form> 
+        <% } %>
+      </li>
+    <% }) %>
+  </ul>
+<% } else { %>
+  <h3>There are no comments yet</h3>
+<% } %>
   </div>
 </div>
 

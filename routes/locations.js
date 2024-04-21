@@ -15,7 +15,9 @@ router.post('/', isLoggedIn, locationsCtrl.create)
 
 router.post('/:locationId/comments', isLoggedIn, locationsCtrl.addComment)
 
-router.delete('/:locationId', isLoggedIn, locationsCtrl.delete)
+// router.delete('/:locationId/comments/:commentId', isLoggedIn, locationsCtrl.deleteComment)
+
+// router.delete('/:locationId', isLoggedIn, locationsCtrl.delete)
 
 
 
