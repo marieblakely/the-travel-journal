@@ -115,24 +115,24 @@ function update(req, res) {
   })
 }
 
-// function deleteComment(req, res) {
-//   Location.findById(req.params.locationId)
-//   .then(location => {
-//     location.comments.remove({_id: req.params.commentId})
-//     location.save()
-//     .then(() => {
-//       res.redirect(`/locations/${location._id}`)
-//     })
-//     .catch(err => {
-//       console.log(err)
-//       res.redirect('/')
-//     })
-//   })
-//   .catch(err => {
-//     console.log(err)
-//     res.redirect('/')
-//   })
-// }
+function deleteComment(req, res) {
+  Location.findById(req.params.locationId)
+  .then(location => {
+    location.comments.remove({_id: req.params.commentId})
+    location.save()
+    .then(() => {
+      res.redirect(`/locations/${location._id}`)
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect('/')
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/')
+  })
+}
 
 
 
@@ -147,5 +147,5 @@ export {
   deleteLocation as delete,
   addComment,
   update,
-  // deleteComment as delete,
+  deleteComment, 
 }
