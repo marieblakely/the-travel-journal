@@ -115,6 +115,52 @@ function update(req, res) {
   })
 }
 
+function editComment(req, res) {
+  Location.findById(req.params.locationId)
+  .then(location => {
+    const comment = location.comments.id(req.params.commentId)
+    if (comment.author.equals(req.user.profile._id)) {
+      res.render('locations/editComment', {
+        location, 
+        comment,
+        title: 'Update Comment'
+      })
+    } else {
+      throw new Error('🚫 Not authorized 🚫')
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/locations')
+  })
+}
+
+
+function updateComment(req, res) {
+  Location.findById(req.params.locationId)
+  .then(location => {
+    const comment = location.comments.id(req.params.commentId)
+    if (comment.author.equals(req.user.profile._id)) {
+      comment.set(req.body)
+      location.save()
+      .then(() => {
+        res.redirect(`/locations/${location._id}`)
+      })
+      .catch(err => {
+        console.log(err)
+        res.redirect('/locations')
+      })
+    } else {
+      throw new Error('🚫 Not authorized 🚫')
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/locations')
+  })
+}
+
+
 function deleteComment(req, res) {
   Location.findById(req.params.locationId)
   .then(location => {
@@ -136,16 +182,16 @@ function deleteComment(req, res) {
 
 
 
-
-
 export {
   index,
   newLocation as new,
   create,
   show,
   edit,
+  update,
   deleteLocation as delete,
   addComment,
-  update,
+  editComment,
+  updateComment,
   deleteComment, 
 }
