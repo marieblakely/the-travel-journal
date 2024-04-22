@@ -1,4 +1,5 @@
 import { Location } from "../models/location.js";
+import { Profile } from "../models/profile.js"
 
 
 function index(req, res){
@@ -39,6 +40,7 @@ function show(req, res) {
   .populate('author')
   .populate('comments.author')
   .then(location => {
+    console.log('this is location: ', location.author)
     res.render('locations/show', {
       title: 'Location Details',
       location
@@ -50,19 +52,16 @@ function show(req, res) {
   })
 }
 
-// function deleteLocation(req, res) {
-//   for (let key in req.body){
-//     if (req.body[key] === '') delete req.body[key]
-//   }
-//   Location.findByIdAndDelete(req.params.locationId)
-//   .then(location => {
-//     res.redirect('/locations')
-//   })
-//   .catch(err => {
-//     console.log(err)
-//     res.redirect('/')
-//   })
-// }
+function deleteLocation(req, res) {
+  Location.findByIdAndDelete(req.params.locationId)
+  .then(location => {
+    res.redirect('/locations')
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/')
+  })
+}
 
 function addComment(req, res) {
   Location.findById(req.params.locationId)
@@ -81,6 +80,38 @@ function addComment(req, res) {
   .catch(err => {
     console.log(err)
     res.redirect('/')
+  })
+}
+
+function edit(req, res) {
+  Location.findById(req.params.locationId)
+  .then(location => {
+    res.render('locations/edit', {
+      location,
+      title: "Edit Location"
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/locations')
+  })
+}
+
+function update(req, res) {
+  Location.findById(req.params.locationId)
+  .then(location => {
+    if (location.author.equals(req.user.profile._id)) {
+      location.updateOne(req.body)
+      .then(()=> {
+        res.redirect(`/locations/${location._id}`)
+      })
+    } else {
+      throw new Error('🚫 Not authorized 🚫')
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/locations')
   })
 }
 
@@ -112,7 +143,9 @@ export {
   newLocation as new,
   create,
   show,
-  // deleteLocation as delete,
+  edit,
+  deleteLocation as delete,
   addComment,
+  update,
   // deleteComment as delete,
 }

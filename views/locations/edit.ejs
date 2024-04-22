@@ -1,0 +1,28 @@
+<%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/locations/edit.css">
+<%- include('../partials/nav') %>
+
+
+<h1>The Travel Journal</h1>
+
+<section>
+  <h1>Edit the Location!</h1>
+  <form action="/locations/<%= location._id %>?_method=PUT" method="POST">
+    <label>
+      Name: 
+      <input 
+        type="text"
+        name="name" 
+        value="<%= location.name %>" 
+        autocomplete="off"
+      >
+    </label>
+    <button type="submit">Edit the location!</button>
+  </form>
+</section>
+
+
+
+
+
+<%- include('../partials/footer') %>

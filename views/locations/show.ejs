@@ -7,19 +7,26 @@
 <h1>The Travel Journal</h1>
 
 <div class="location-container">
-
   <div class="location-card">
     <h2> <%= location.name %></h2>
     <img src="<%= location.photo %>" alt="location image">
     <p> <%= location.content %></p>
 
+  <div class="comment-container">
+    <form method="POST" action="/locations/<%= location._id %>/comments">
+      <textarea type="text" name="content" placeholder="Leave a comment..."></textarea><br><br>
+      <button type="submit" class="comment-button">Add Comment</button>
+    </form>
+  </div>
+  <% if (location.author.equals(user?.profile._id)) { %>
+    <a href="<%= location._id %>/edit">
+      <button class="btn">Edit this location</button>
+    </a>
+    <form action="<%= location._id %>?_method=DELETE" method="POST">
+      <button class="btn" type="submit">Delete this location</button>
+    </form>
+  <% } %>
 
-<div class="comment-container">
-  <form method="POST" action="/locations/<%= location._id %>/comments">
-    <textarea type="text" name="content" placeholder="Leave a comment..."></textarea><br><br>
-    <button type="submit" class="comment-button">Add Comment</button>
-  </form>
-</div>
 
 <% if (location.comments.length) { %>
   <h3>Comments</h3>

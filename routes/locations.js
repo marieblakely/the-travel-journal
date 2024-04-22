@@ -15,11 +15,11 @@ router.post('/', isLoggedIn, locationsCtrl.create)
 
 router.post('/:locationId/comments', isLoggedIn, locationsCtrl.addComment)
 
-// router.delete('/:locationId/comments/:commentId', isLoggedIn, locationsCtrl.deleteComment)
+router.get('/:locationId/edit', isLoggedIn, locationsCtrl.edit)
 
-// router.delete('/:locationId', isLoggedIn, locationsCtrl.delete)
+router.put('/:locationId', isLoggedIn, locationsCtrl.update)
 
-
+router.delete('/:locationId', isLoggedIn, locationsCtrl.delete)
 
 export {
   router
