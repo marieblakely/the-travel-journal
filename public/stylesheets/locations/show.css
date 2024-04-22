@@ -1,5 +1,9 @@
 body {
   background: beige;
+  color: black;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 h1 {
