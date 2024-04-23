@@ -11,6 +11,13 @@ h1 {
   justify-content: center;
 }
 
+.location-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .location-card {
   display: flex;
   border: 1px solid;
