@@ -20,7 +20,7 @@
 
 ### Planning Materials:
 
-[Planning Materials](https://docs.google.com/document/d/1ehHp7F168ZOgbCp4YLXeWj69-Je3f7CJAkIs_uhyI3I/edit?usp=sharing)
+[Planning Materials](https://trello.com/invite/b/NjFljpz1/ATTI2704ae0e4df224e63a8b977b7d7751c87BCCE9BC/the-travel-journal)
 
 
 Technology:
