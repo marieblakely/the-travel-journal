@@ -1,7 +1,7 @@
 
 
-![game screenshot](assets/Images/gamescreenshot.png)
-![updated screenshot](assets/Images/updatedgamescreenshot.png)
+![app screenshot](assets/Images/gamescreenshot.png)
+![app screenshot](assets/Images/updatedgamescreenshot.png)
 # The Travel Journal
 
 
@@ -34,6 +34,7 @@ Technology:
 
 
 Attributes:
+* [Google Images]() 
 * [Coolors](https://coolors.co/) 
 * [Hero Patterns](https://heropatterns.com/)
 * [Superfffmk.life](https://superfffmk.life/product_details/75046559.html)
