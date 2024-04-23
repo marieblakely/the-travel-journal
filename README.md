@@ -15,7 +15,7 @@
 
 ### Description:
 
-##### Welcome back to the 90's. 90's Trivia Quiz Game is a game that takes you back to some of your favorite tv shows, movies, toys, and music. The category cards can be clicked, which will then display questions related to that category. You can test your knowledge of the 90's by answering as many questions as you can  correctly before the time runs out. I chose this game to take everyone on a journey back to the 90's where some of the best music, tv shows, toys, and movies brought us some of the best memories.
+##### Through The Travel Journal you are able to create a post to document the locations you visit and what you enjoyedd about your time there. You can upload a photo as well. Users are able to comment on your post to share their experiences of that location. You can add as many locations as you like. 
 
 
 ### Planning Materials:
