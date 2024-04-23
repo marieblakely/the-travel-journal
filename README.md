@@ -15,7 +15,7 @@
 
 ### Description:
 
-##### Through The Travel Journal you are able to create a post to document the locations you visit and what you enjoyedd about your time there. You can upload a photo as well. Users are able to comment on your post to share their experiences of that location. You can add as many locations as you like. 
+##### Through The Travel Journal you are able to create a post to document the locations you visit and what you enjoyed about your time there. You can upload a photo as well. Users are able to comment on your post to share their experiences of that location. You can add as many locations as you like and comment on other users posts as well. 
 
 
 ### Planning Materials:
