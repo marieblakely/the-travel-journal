@@ -20,6 +20,7 @@ h1 {
 
 .location-card {
   display: flex;
+  background-color: whitesmoke;
   border: 1px solid;
   padding: 24px;
   border-radius: 8px;
