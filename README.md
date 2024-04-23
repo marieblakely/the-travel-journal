@@ -1,7 +1,7 @@
 
 
-![app screenshot](assets/Images/gamescreenshot.png)
-![app screenshot](assets/Images/updatedgamescreenshot.png)
+![app screenshot]()
+![app screenshot]()
 # The Travel Journal
 
 
