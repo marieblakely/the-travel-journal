@@ -10,7 +10,7 @@
 
 ## Explore The Travel Journal here:
 
-### [The Travel Journal](https://90striviaquizgame.netlify.app/)
+### [The Travel Journal]()
 
 
 ### Description:
@@ -38,7 +38,7 @@ Technologies Used:
 
 
 Attributes:
-* [Google Images](google.com/travel/images) 
+* [Favion Image](https://www.realsimple.com/thmb/xLA4latZR6rEXcB0S2fYPs7o7ug=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/travel-agent-GettyImages-1211719627-4b924cc562fe4ab4b137b6e4ea9d401d.jpg) 
 * [Cinzel Google Font](https://fonts.google.com/selection/embed)
 * [Unsplash](https://unsplash.com/photos/flat-lay-photography-of-camera-book-and-bag-qyAka7W5uMY)
 
