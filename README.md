@@ -15,7 +15,7 @@
 
 ### Description:
 
-##### Through The Travel Journal you are able to create a post to document the locations you visit and what you enjoyed about your time there. You can upload a photo as well. Users are able to comment on your post to share their experiences of that location. You can add as many locations as you like and comment on other users posts as well. 
+##### Through The Travel Journal you are able to create a post to document the locations you visit and what you enjoyed about your time there. You can upload a photo as well. Users when logged in, are able to comment on your post to share their experiences of that location. You can add as many locations as you like and comment on other users posts as well. 
 
 
 ### Planning Materials:
@@ -23,7 +23,7 @@
 [Planning Materials](https://trello.com/invite/b/NjFljpz1/ATTI2704ae0e4df224e63a8b977b7d7751c87BCCE9BC/the-travel-journal)
 
 
-Technology:
+Technologies Used:
 
 * HTML
 * JavaScript
@@ -33,11 +33,12 @@ Technology:
 * Trello
 * Whimsical
 * Fly.io
+* MongoDB Compass
 
 
 
 Attributes:
-* [Google Images]() 
+* [Google Images](google.com/travel/images) 
 * [Cinzel Google Font](https://fonts.google.com/selection/embed)
 * [Unsplash](https://unsplash.com/photos/flat-lay-photography-of-camera-book-and-bag-qyAka7W5uMY)
 
