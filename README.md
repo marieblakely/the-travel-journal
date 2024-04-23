@@ -35,10 +35,7 @@ Technology:
 
 Attributes:
 * [Google Images]() 
-* [Coolors](https://coolors.co/) 
-* [Hero Patterns](https://heropatterns.com/)
-* [Superfffmk.life](https://superfffmk.life/product_details/75046559.html)
-* [Orbitron Google Font](https://superfffmk.life/product_details/75046559.html)
+* [Cinzel Google Font](https://fonts.google.com/selection/embed)
 * [Pixabay](https://pixabay.com/sound-effects/search/retro%20games/)
 * [Pixabay](https://pixabay.com/sound-effects/search/retro%20games/) 
 
