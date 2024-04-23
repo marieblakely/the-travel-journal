@@ -30,13 +30,17 @@ Technology:
 * CSS
 * Git
 * GitHub
-* Netlify
+* Trello
+* Whimsical
+* Fly.io
+
 
 
 Attributes:
 * [Google Images]() 
 * [Cinzel Google Font](https://fonts.google.com/selection/embed)
 * [Unsplash](https://unsplash.com/photos/flat-lay-photography-of-camera-book-and-bag-qyAka7W5uMY)
+
 
 
 Icebox Items:
