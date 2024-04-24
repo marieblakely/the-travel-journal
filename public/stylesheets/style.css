@@ -78,7 +78,12 @@ h3 {
   justify-content: center;
   align-items: center;
   width: 550px;
-  height: 500px;
+  height: 550px;
   margin-top: 50px;
 }
 
+#avatar {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}

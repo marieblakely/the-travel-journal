@@ -1,3 +1,9 @@
+main {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 .form-container {
   display: flex;
   justify-content: center;
@@ -5,7 +11,6 @@
 }
 
 .form-card {
-  /* width: 25%; */
   display: flex;
   flex-direction: column;
   background-color: rgba(245, 245, 245, 0.595);
@@ -19,20 +24,12 @@
   align-items: center;
   height: 600px;
   width: 400px;
-
 }
 
 .content-input {
   margin-top: 8px;
   margin-bottom: 16px;
 }
-
-/* .content-input {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-} */
 
 #avatar {
   border-radius: 100%;
