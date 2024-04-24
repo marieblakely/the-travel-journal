@@ -56,3 +56,11 @@ img {
   justify-content: center;
   align-items: center;
 }
+
+.comment-button {
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 4px;
+  margin-top: 5px;
+}

@@ -16,12 +16,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 600px;
   width: 400px;
   }
+
+h2 {
+  text-align: center;
+}
 
   .main-container {
     display: flex;
     border: 1px solid;
     border-radius: 8px;
+    text-align: center;
   }
