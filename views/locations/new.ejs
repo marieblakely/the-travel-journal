@@ -2,9 +2,10 @@
 <link rel="stylesheet" href="stylesheets/locations/new.css">
 <%- include('../partials/nav') %>
 
-
-<main>
+<div class="form-container">
+  <main>
   <h1><%= title %></h1>
+<div class="form-card">
   <form action="/locations" method="POST">
     <img id="avatar" src="<%= user.profile.avatar %>"/><br><br>
     <label for="location-input">Location:</label>
@@ -14,11 +15,12 @@
     <div class="content-input">
       <label for="content-input">Tell us about your time there:</label><br>
       <textarea name="content" id="" cols="30" rows="2" placeholder="Tell us about your time there!"></textarea><br><br>
-      </div>
+    </div>
     <button type="submit">Add Location</button> 
   </form>
-
-</main>
+</div>
+  </main>
+</div>
 
 <%- include('../partials/footer') %>
 
