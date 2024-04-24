@@ -49,11 +49,13 @@ nav > a {
 h2 {
   font-style: italic;
   font-size: medium;
+  justify-content: center;
 }
 
 .login-container {
   display: flex;
   background-color: whitesmoke;
+  /* opacity: 0.5; */
   border: 1px solid;
   border-radius: 8px;
   justify-content: center;
