@@ -22,6 +22,6 @@ body {
 
   .main-container {
     display: flex;
-    border: 1 px solid;
+    border: 1px solid;
     border-radius: 8px;
   }

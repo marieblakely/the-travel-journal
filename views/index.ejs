@@ -5,6 +5,7 @@
 <%- include('./partials/nav') %>
 
 <main>
+  <div class="login-container">
   <h1>The Travel Journal</h1>
   <h2>"Traveling - it leaves you speechless, then turns you into a storyteller."  -Ibn Battuta</h2>
   <h1>Hi <%= user ? user.profile.name : "Friend!" %></h1>
@@ -19,6 +20,7 @@
   <% if (!user) { %>
     <h2>Login to add your adventure!</h2>
   <% } %>
+</div>
 </main>
 
 <%- include('./partials/footer') %>
