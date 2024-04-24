@@ -4,12 +4,11 @@
   align-items: center;
 }
 
-
 .form-card {
   /* width: 25%; */
   display: flex;
   flex-direction: column;
-  background-color: whitesmoke;
+  background-color: rgba(245, 245, 245, 0.595);
   border: 1px solid;
   box-shadow: 4px 4px 0px rgba(186, 182, 182, 0.7), 0px 9px 30px rgba(186, 182, 182, 0.7);
   padding: 24px;
