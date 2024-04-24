@@ -4,3 +4,24 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+.location-container {
+  display: flex;
+  background-color: whitesmoke;
+  border: 1px solid;
+  box-shadow: 4px 4px 0px rgba(186, 182, 182, 0.7), 0px 9px 30px rgba(186, 182, 182, 0.7);
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 400px;
+  }
+
+  .main-container {
+    display: flex;
+    border: 1 px solid;
+    border-radius: 8px;
+  }
