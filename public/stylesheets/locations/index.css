@@ -17,8 +17,8 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 600px;
-  width: 400px;
+  /* height: 600px;
+  width: 400px; */
   }
 
 h2 {
@@ -34,4 +34,5 @@ h2 {
     border-radius: 8px;
     text-align: center;
     width: fit-content;
+    margin: 0 auto;
   }
