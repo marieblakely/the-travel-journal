@@ -27,7 +27,11 @@ h2 {
 
   .main-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid;
+    background-color: rgba(245, 245, 245, 0.372);
     border-radius: 8px;
     text-align: center;
+    width: fit-content;
   }
