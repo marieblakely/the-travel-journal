@@ -35,3 +35,8 @@ body {
   margin: 0 auto;
 }
 
+.edit-location-btn {
+  border-radius: 4px;
+  background-color: rgb(224,211,202);
+  padding: 2px;
+}
