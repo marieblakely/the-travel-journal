@@ -35,6 +35,7 @@ Technologies Used:
 * Fly.io
 * MongoDB Compass
 * Node.js
+* Google OAuth
 
 
 
