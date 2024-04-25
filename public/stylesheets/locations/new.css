@@ -1,3 +1,7 @@
+body {
+  background-image: url(https://images.unsplash.com/photo-1504542982118-59308b40fe0c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+} 
+
 main {
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
@@ -14,7 +18,7 @@ main {
 .form-card {
   display: flex;
   flex-direction: column;
-  background-color: rgba(245, 245, 245, 0.595);
+  background-color: rgba(245, 245, 245, 0.786);
   border: 1px solid;
   box-shadow: 4px 4px 0px rgba(186, 182, 182, 0.7), 0px 9px 30px rgba(186, 182, 182, 0.7);
   padding: 24px;
@@ -37,4 +41,12 @@ main {
   border-radius: 100%;
   width: 50px;
   height: 50px;
+}
+
+.add-location-button{
+  border-radius: 4px;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: rgb(224,211,202);
 }
