@@ -30,6 +30,7 @@ body {
   align-items: center;
   height: 350px;
   width: 400px;
+  margin: 0 auto;
 }
 
 .button-container {
