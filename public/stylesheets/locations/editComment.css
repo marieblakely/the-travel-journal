@@ -45,4 +45,7 @@ body {
   border-radius: 4px;
   background-color: rgb(224,211,202);
   padding: 2px;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
