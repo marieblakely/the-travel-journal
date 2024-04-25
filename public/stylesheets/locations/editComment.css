@@ -40,3 +40,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.update-comment-btn {
+  border-radius: 4px;
+  background-color: rgb(224,211,202);
+  padding: 2px;
+}
