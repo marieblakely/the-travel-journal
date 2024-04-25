@@ -54,6 +54,14 @@ img {
   border-radius: 100%;
 }
 
+#comment-ctr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .comment-container {
   display: flex;
   justify-content: center;
@@ -65,8 +73,17 @@ img {
   justify-content: center;
   border-radius: 4px;
   padding: 4px;
-  margin-top: 5px;
+  margin-top: 10px;
   background-color: rgb(224,211,202);
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+  gap: 10px;
+  margin-bottom: 5px;
 }
 
 .edit-btn {

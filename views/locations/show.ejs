@@ -15,24 +15,22 @@
     <h2> <%= location.name %></h2>
     <img src="<%= location.photo %>" alt="location image">
     <p> <%= location.content %></p>
-
+    <div class="action-buttons">
+    <% if (location.author.equals(user?.profile._id)) { %>
+      <a href="<%= location._id %>/edit">
+        <button class="edit-btn">Edit this location</button>
+      </a>
+      <form action="<%= location._id %>?_method=DELETE" method="POST">
+        <button class="delete-btn" type="submit">Delete this location</button>
+      </form>
+    <% } %>
+  </div>
   <div class="comment-container">
-    <form method="POST" action="/locations/<%= location._id %>/comments">
-      <textarea type="text" name="content" placeholder="Leave a comment..."></textarea><br><br>
+    <form id="comment-ctr"   method="POST" action="/locations/<%= location._id %>/comments">
+      <textarea type="text" name="content" placeholder="Leave a comment..."></textarea>
       <button type="submit" class="comment-button">Add Comment</button>
     </form>
   </div>
-  <% if (location.author.equals(user?.profile._id)) { %>
-    <a href="<%= location._id %>/edit">
-      <button class="edit-btn">Edit this location</button>
-    </a>
-    <form action="<%= location._id %>?_method=DELETE" method="POST">
-  
-      <button class="delete-btn" type="submit">Delete this location</button>
-  
-    </form>
-  <% } %>
-
 
 <% if (location.comments.length) { %>
   <h3>Comments</h3>
