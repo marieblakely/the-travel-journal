@@ -3,9 +3,11 @@
 <%- include('../partials/nav') %>
 
 
-<h1>The Travel Journal</h1>
 
+
+<div class="edit-location-container">
 <section>
+  <div class="edit-location-card">
   <h1>Edit the Location!</h1>
   <form action="/locations/<%= location._id %>?_method=PUT" method="POST">
     <label>
@@ -19,8 +21,9 @@
     </label>
     <button type="submit">Edit the location!</button>
   </form>
+</div>
 </section>
-
+</div>
 
 
 
