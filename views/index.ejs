@@ -15,13 +15,14 @@
   <h2>"Traveling - it leaves you speechless, then turns you into a storyteller."  -Ibn Battuta</h2>
   <h1>Hi <%= user ? user.profile.name : "Friend!" %></h1>
   <% if (user?.profile.avatar) { %>
-    <h3>You're logged in! Explore and journal your travels!</h3>
+    
     <div>
-      <img
+      <img id="login-avatar"
         src="<%= user.profile.avatar %>"
         alt="<%= user.profile.name %> avatar"
       />
     </div>
+    <h3>You're logged in! Explore and journal your travels!</h3>
   <% } %>
   <% if (!user) { %>
     <h2>Login to add your adventure!</h2>

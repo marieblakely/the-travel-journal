@@ -38,8 +38,8 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 600px;
-  width: 400px;
+  height: 650px;
+  width: 450px;
   }
 
 
@@ -66,13 +66,25 @@ img {
   border-radius: 4px;
   padding: 4px;
   margin-top: 5px;
+  background-color: rgb(224,211,202);
 }
 
-.btn-container {
-  display: flex;
-
-}
-
-.btn {
+.edit-btn {
   border-radius: 4px;
+  background-color: rgb(224,211,202);
+}
+
+.delete-btn {
+  border-radius: 4px;
+  background-color: rgb(224,211,202);
+}
+
+.edit-comment-btn {
+  border-radius: 4px;
+  background-color: rgb(224,211,202);
+}
+
+.delete-comment-btn {
+  border-radius: 4px;
+  background-color: rgb(224,211,202);
 }
