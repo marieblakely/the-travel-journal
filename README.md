@@ -1,7 +1,7 @@
 
 
 ![app screenshot](public/assets/images/screenshot.png)
-![app screenshot]()
+![app screenshot](public/assets/images/app.png)
 # The Travel Journal
 
 
