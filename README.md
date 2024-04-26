@@ -34,8 +34,11 @@ Technologies Used:
 * Whimsical
 * Fly.io
 * MongoDB Compass
-* Node.js
+* Node
 * Google OAuth
+* Passport.js
+* Express
+
 
 
 
