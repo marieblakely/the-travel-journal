@@ -2,30 +2,29 @@
 <link rel="stylesheet" href="/stylesheets/locations/editComment.css">
 <%- include('../partials/nav') %>
 
+
+
 <div class="edit-comment-container">
-<section>
-  <div class="edit-comment-card">
-  <h1>Edit your comment!</h1>
-  <form 
-    action="/locations/<%= location._id %>/comments/<%= comment._id %>?_method=PUT"
-    method="POST"
-  >
-    <label>
-      Content: 
-      <textarea
-        cols="30"
-        rows="5" 
-        type="text"
-        name="content" 
-        autocomplete="off"
-      ><%= comment.content %></textarea>
-    </label>
-  <div class="button-container">
-    <button class="update-comment-btn" type="submit">Update Comment</button>
-  </div> 
-  </form>
-</div>
-</section>
+  <section>
+    <div class="edit-comment-card">
+      <h1>Edit your comment!</h1>
+      <form action="/locations/<%= location._id %>/comments/<%= comment._id %>?_method=PUT" method="POST">
+        <label>
+          Content: 
+          <textarea
+            cols="30"
+            rows="5" 
+            type="text"
+            name="content" 
+            autocomplete="off"
+          ><%= comment.content %></textarea>
+        </label>
+        <div class="button-container">
+          <button class="update-comment-btn" type="submit">Update Comment</button>
+        </div> 
+      </form>
+    </div>
+  </section>
 </div>
 
 <%- include('../partials/footer') %>

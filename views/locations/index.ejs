@@ -14,13 +14,13 @@
     <h2>"Traveling - it leaves you speechless, then turns you into a storyteller." -Ibn Battuta</h2>
     <h3>Click on the location to view the traveler's adventure</h3>
     <div class="location-container">
-    <% locations.forEach(location => { %>
-    <div class="location-card">
-      <p>
-        <a href="/locations/<%= location._id %>"><%= location.name %></a> 
-      </p>
-    </div>
-    <% }) %>
+      <% locations.forEach(location => { %>
+      <div class="location-card">
+        <p>
+          <a href="/locations/<%= location._id %>"><%= location.name %></a> 
+        </p>
+      </div>
+      <% }) %>
     </div>
   </main>
 </div>

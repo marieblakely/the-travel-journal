@@ -7,8 +7,6 @@
 
 
 
-
-
 <div class="location-container">
   <div class="location-card">
     <h1>The Travel Journal</h1>
@@ -24,35 +22,34 @@
         <button class="delete-btn" type="submit">Delete this location</button>
       </form>
     <% } %>
-  </div>
-  <div class="comment-container">
-    <form id="comment-ctr" method="POST" action="/locations/<%= location._id %>/comments">
-      <textarea type="text" name="content" placeholder="Leave a comment..."></textarea>
-      <button type="submit" class="comment-button">Add Comment</button>
-    </form>
-  </div>
-
-<% if (location.comments.length) { %>
-  <h3>Comments</h3>
-  <ul>
-    <% location.comments.forEach(comment => { %>
-      <li>
-        <%= comment.content %> - 
-        <%= comment.author.name %> 
-        <% if (comment.author._id.equals(user.profile._id)) { %>
-          <a href="/locations/<%= location._id %>/comments/<%= comment._id %>/edit">
-            <button class="edit-comment-btn">Edit Comment</button>
-          </a>
-          <form action="/locations/<%= location._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
-            <button class="delete-comment-btn" type="submit">🗑️</button>
-          </form> 
-        <% } %>
-      </li>
-    <% }) %>
-  </ul>
-<% } else { %>
-  <h3>There are no comments yet</h3>
-<% } %>
+    </div>
+    <div class="comment-container">
+      <form id="comment-ctr" method="POST" action="/locations/<%= location._id %>/comments">
+        <textarea type="text" name="content" placeholder="Leave a comment..."></textarea>
+        <button type="submit" class="comment-button">Add Comment</button>
+      </form>
+    </div>
+    <% if (location.comments.length) { %>
+      <h3>Comments</h3>
+      <ul>
+        <% location.comments.forEach(comment => { %>
+          <li>
+            <%= comment.content %> - 
+            <%= comment.author.name %> 
+            <% if (comment.author._id.equals(user.profile._id)) { %>
+              <a href="/locations/<%= location._id %>/comments/<%= comment._id %>/edit">
+                <button class="edit-comment-btn">Edit Comment</button>
+              </a>
+              <form action="/locations/<%= location._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
+                <button class="delete-comment-btn" type="submit">🗑️</button>
+              </form> 
+            <% } %>
+          </li>
+        <% }) %>
+      </ul>
+    <% } else { %>
+      <h3>There are no comments yet</h3>
+    <% } %>
   </div>
 </div>
 
