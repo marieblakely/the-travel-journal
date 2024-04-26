@@ -113,6 +113,8 @@ img {
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-style: normal;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .delete-comment-btn {
@@ -121,4 +123,9 @@ img {
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+.comment-button-container {
+  display: flex;
+  flex-direction: column;
 }

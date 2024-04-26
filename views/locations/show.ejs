@@ -36,6 +36,7 @@
           <li>
             <%= comment.content %> - 
             <%= comment.author.name %> 
+            <div class="comment-button-container">
             <% if (comment.author._id.equals(user.profile._id)) { %>
               <a href="/locations/<%= location._id %>/comments/<%= comment._id %>/edit">
                 <button class="edit-comment-btn">Edit Comment</button>
@@ -43,6 +44,7 @@
               <form action="/locations/<%= location._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
                 <button class="delete-comment-btn" type="submit">🗑️</button>
               </form> 
+            </div>
             <% } %>
           </li>
         <% }) %>
